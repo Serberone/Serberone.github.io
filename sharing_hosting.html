@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Виды хостинга</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Главная</a>
+                    <a class="navbar-item" href="Types.html">Виды хостинга</a>
+                    <a class="navbar-item" href="Criteria.html">Критерии выбора</a>
+                    <a class="navbar-item" href="Compare.html">Таблица сравнения</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="columns is-variable is-8">
+            <aside class="column is-12-mobile is-4-tablet is-3-desktop">
+                <aside class="menu">
+                    <p class="menu-label">Разделы</p>
+                    <ul class="menu-list">
+						<li><a href="server_info.html">Выделенные серверы</a></li>
+						<li><a href="#">Виртуальный хостинг</a></li>
+						<li><a href="VPS.html">VPS и VDS</a></li>
+                        <li><a href="cloud.html">Облачный хостинг</a></li>
+                    </ul>
+                </aside>
+            </aside>
+            
+            <main class="column">
+                <section class="content">
+                    <h1 class="title">Виртуальный хостинг</h1>
+                    <p>Виртуальный хостинг (shared hosting) — это предоставление в аренду одного физического сервера сразу нескольким арендаторам. Его аппаратные мощности распределяются между всеми пользователями. Во избежание неравномерности распределения мощностей машины (процессорной мощности, дисковой и оперативной памяти) и их дефицита во время пиковых нагрузок некоторые хостеры ограничивают ресурсы сервера для скриптов отдельного пользователя (script — файл или программа со сценарием автоматизации некоторых процессов сайта). </p>
+					<p>Настройка «под себя» отсутствует — все пользуются одним и тем же ПО, которое устанавливает провайдер. Подходит для небольших и несложных проектов. Это самый дешёвый вид хостинга.</p>
+					<figure class="image is-16by9">
+                        <img src="image/444feea15121a83b06f57967e39ab832.png" alt="Пример хостинга">
+                    </figure>
+					<div class="video-container">
+                        <iframe class="has-ratio" width="800" height="450" src="https://www.youtube.com/embed/8fKEpSvy6AE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+	
+	<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+		<a href="server_info.html" class="pagination-previous">Предыдущая</a>
+		<a href="VPS.html" class="pagination-next">Следующая</a>
+		<ul class="pagination-list">
+			<li><a href="server_info.html" class="pagination-link" aria-label="Goto page 1">1</a></li>
+			<li><a class="pagination-link is-current" aria-label="Page 2">2</a></li>
+			<li><a href="VPS.html" class="pagination-link" aria-label="Goto page 3">3</a></li>
+			<li><a href="cloud.html" class="pagination-link" aria-label="Goto page 4">4</a></li>
+		</ul>
+	</nav>
+
+    <footer class="has-text-centered is-flex-align-items-flex-end mt-auto">
+		<span>&copy; 2025 Molchanov</span>
+    </footer>
+
+    <!-- для бургер-меню -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const burger = document.querySelector(".navbar-burger");
+        const menu = document.querySelector("#navbarMenu");
+        
+        if (burger && menu) {
+            burger.addEventListener("click", () => {
+                burger.classList.toggle("is-active");
+                menu.classList.toggle("is-active");
+            });
+        }
+    });
+    </script>
+</body>
+</html>

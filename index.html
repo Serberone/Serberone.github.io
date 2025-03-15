@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Виды хостинга</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#">Главная</a>
+                    <a class="navbar-item" href="Types.html">Виды хостинга</a>
+                    <a class="navbar-item" href="Criteria.html">Критерии выбора</a>
+                    <a class="navbar-item" href="Compare.html">Таблица сравнения</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="columns is-variable is-8"> 
+            <main class="column">
+                <section class="content">
+                    <p>Текстовые материалы взяты из <a href="https://habr.com/ru/companies/ruvds/articles/443522/">данной статьи</a></p>
+					<h2 class="subtitle">Немного про хостинг</h2>
+					<p>Хостинг (hosting) — это услуга, предоставляемая компаниями хостинг-провайдерами (хостерами), которая заключается в размещении информационных ресурсов пользователей на их (компаний) серверах. Функциональность сервера зависит от установленного программного обеспечения, которое, в свою очередь, зависит от операционной системы. Хостинги отличаются наличием тех или иных служб, возможностью поддержки различных технологий, языков программирования и скриптов. Также различаются по количественным и качественным ограничениям (дисковое пространство, количество сайтов, пропускная способность каналов и прочее). Доступ пользователя к своим данным реализован через личный кабинет. Обработка запросов к информационным ресурсам заказчика ведётся в режиме реального времени 24/7. В услугу хостинга входит техподдержка, обеспечение безопасности и резервное копирование данных.</p>
+					<div class="video-container">
+                        <iframe class="has-ratio" width="800" height="450" src="https://www.youtube.com/embed/2bBCSyvkA4M" frameborder="0" allowfullscreen></iframe>
+                    </div>
+					<p>Необходимость такого удалённого размещения продиктована тем, что разрастающееся со временем множество этих данных невозможно хранить и обрабатывать на персональном компьютере владельца информационного ресурса — объёмы слишком велики, мощностей машины не хватит. Чтобы использовать свой компьютер как сервер, понадобится избыточный массив независимых дисков (Redundant Array of Independent Disks, RAID-массив) либо очень объёмное запоминающее устройство (SSD), мощный исходящий канал в сеть Интернет, лицензированная серверная операционная система и знания, чтобы всем этим пользоваться. Но главное — это стоит огромных денег. Поэтому существуют физические и виртуальные серверы, которые хостинг-провайдеры сдают в аренду. Это: VPS/VDS, выделенные серверы, виртуальный хостинг, облачный хостинг.</p>
+				</section>
+            </main>
+        </div>
+    </div>
+
+    <footer class="has-text-centered is-flex-align-items-flex-end mt-auto">
+		<span>&copy; 2025 Molchanov</span>
+    </footer>
+
+
+    <script>
+	<!-- для бургер-меню -->
+        document.addEventListener("DOMContentLoaded", () => {
+        const burger = document.querySelector(".navbar-burger");
+        const menu = document.querySelector("#navbarMenu");
+        
+        if (burger && menu) {
+            burger.addEventListener("click", () => {
+                burger.classList.toggle("is-active");
+                menu.classList.toggle("is-active");
+            });
+        }
+    });
+    </script>
+</body>
+</html>

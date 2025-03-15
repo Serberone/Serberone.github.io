@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Виды хостинга</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Главная</a>
+                    <a class="navbar-item" href="Types.html">Виды хостинга</a>
+                    <a class="navbar-item" href="Criteria.html">Критерии выбора</a>
+                    <a class="navbar-item" href="#">Таблица сравнения</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="columns is-variable is-8">
+            <main class="column">
+                <section class="content">
+                    <h1 class="title">Сравнение хостингов</h1>
+                    <table class="table is-striped is-fullwidth is-narrow">
+                        <thead>
+                            <tr>
+                                <th>Хостинг</th>
+                                <th>Плюсы</th>
+                                <th>Минусы</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+						<tr>
+                                <td>Выделенный сервер</td>
+                                <td>
+									<p>Высокая производительность</p>
+									<p>Максимальный контроль</p>
+								</td>
+                                <td>
+									<p>Высокая стоимость</p>
+									<p>Требуется высокая квалификация для поддержки</p>
+								</td>
+                            </tr>
+							<tr>
+                                <td>Виртуальный хостинг</td>
+                                <td>
+									<p>Лёгкий старт</p>
+									<p>Низкая стоимость</p>
+								</td>
+                                <td>
+									<p>Ограниченные контроль и функциональность</p>
+									<p>Может не выдержать большого трафика</p>
+									<p>Проблемы с производительностью</p>
+								</td>
+                            </tr>
+                            <tr>
+                                <td>VPS/VDS</td>
+                                <td>
+									<p>Root права</p>
+									<p>Защищённая среда</p>
+									<p>Нет лимитов на проекты</p>
+									<p>Дешевле выделенного сервера</p>
+								</td>
+                                <td>
+									<p>Дороже виртуального сервера</p>
+									<p>Требуется определённый уровень знания администрирования</p>
+								</td>
+                            </tr>
+                            <tr>
+                                <td>Облачный хостинг</td>
+                                <td>
+									<p>Стабильность за счёт динамического распределения ресурсов</p>
+									<p>Экономичность</p>
+									<p>Масштабируемость</p>
+									<p>Гибкость</p>
+								</td>
+                                <td>
+									<p>Возможны проблемы безопасности</p>
+									<p>Дороже виртуального хостинга</p>
+									<p>Требуется квалификация для поддержки</p>
+									<p>Меньше прав администрирования</p>
+								</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer class="has-text-centered is-flex-align-items-flex-end mt-auto">
+		<span>&copy; 2025 Molchanov</span>
+    </footer>
+
+
+    <script>
+	<!-- для бургер-меню -->
+        document.addEventListener("DOMContentLoaded", () => {
+        const burger = document.querySelector(".navbar-burger");
+        const menu = document.querySelector("#navbarMenu");
+        
+        if (burger && menu) {
+            burger.addEventListener("click", () => {
+                burger.classList.toggle("is-active");
+                menu.classList.toggle("is-active");
+            });
+        }
+    });
+    </script>
+</body>
+</html>

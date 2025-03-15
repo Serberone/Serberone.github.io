@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Виды хостинга</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Главная</a>
+                    <a class="navbar-item" href="Types.html">Виды хостинга</a>
+                    <a class="navbar-item" href="Criteria.html">Критерии выбора</a>
+                    <a class="navbar-item" href="Compare.html">Таблица сравнения</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="columns is-variable is-8">
+            <aside class="column is-12-mobile is-4-tablet is-3-desktop">
+                <aside class="menu">
+                    <p class="menu-label">Разделы</p>
+                    <ul class="menu-list">
+						<li><a href="server_info.html">Выделенные серверы</a></li>
+						<li><a href="sharing_hosting.html">Виртуальный хостинг</a></li>
+						<li><a href="#">VPS и VDS</a></li>
+                        <li><a href="cloud.html">Облачный хостинг</a></li>
+                    </ul>
+                </aside>
+            </aside>
+            
+            <main class="column">
+                <section class="content">
+                    <h1 class="title">VPS и VDS</h1>
+					<p><a href="https://ruvds.com/ru-rub/">VPS (Virtual Private Server)</a> и <a href="https://ruvds.com/ru-rub/">VDS (Virtual Dedicated Server)</a> — по сути одно и то же. Это виртуальные серверы, эмулирующие работу физического сервера и предоставляемые хостером в аренду клиенту с максимальными привилегиями: установка операционной системы и программного обеспечения, root-доступ (права главного администратора). Клиент получает в пользование выделенные аппаратные ресурсы сервера с полным управлением и контролем, но, возможно, не все, имеющиеся на машине. То есть на одном физическом сервере запущено несколько виртуальных серверов под разных клиентов, но на каждом из них администратор (заказчик) может работать так же, как на отдельной физической машине, при этом арендная плата существенно ниже, чем за выделенный сервер.</p>
+					<h2 class="subtitle">Разница между VPS и VDS</h2>
+					<p>VPS. Виртуализация такого сервера осуществляется в рамках операционной системы (контейнеризация) с помощью специальных технологий (FreeBSD Jail, Parallels Virtuozzo Containers, iCore Virtual Accounts, OpenVZ и других). Клиент может работать в персональном изолированном программном окружении с правами суперпользователя, но не может поменять саму операционную систему или её ядро. Также существуют разные лимитирования, основанные на политике хостера (например, непрерывная доступность ресурсов сервера).</p>
+					<p>VDS. Виртуализация этого вида сервера осуществляется на аппаратном уровне. Это физическое выделение ресурсов машины, точнее эмуляция её физических элементов при помощи специальных технологий (VMWare, LDoms, KVM, Microsoft Hyper-V, XEN). Клиент не только получает в постоянное пользование ресурсы CPU, дискового пространства и памяти, но также может устанавливать иную операционную систему и совершать её модификации вплоть до смены настроек BIOS.</p>
+					<p>Этот тип хост-услуг набирает всё большую популярность в мире благодаря соотношению цена/качество. Под качеством здесь понимается в первую очередь широта возможностей управления своими хостируемыми проектами и простота масштабируемости выделяемых ресурсов. Помимо владельцев или системных администраторов сайтов, его особенно любят разработчики для собственно разработки и тестирования нового ПО. А бизнесу VPS/VDS хостинг помогает сократить расходы.</p>
+					<figure class="image is-16by9">
+                        <img src="image/43959c0b2b6b7538ef25c8ece2e2ca53.png" alt="Пример хостинга">
+                    </figure>
+					<div class="video-container">
+                        <iframe class="has-ratio" width="800" height="450" src="https://www.youtube.com/embed/4Xaj6eKRIC4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+	
+	<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+		<a href="sharing_hosting.html" class="pagination-previous">Предыдущая</a>
+		<a href="cloud.html" class="pagination-next">Следующая</a>
+		<ul class="pagination-list">
+			<li><a href="server_info.html" class="pagination-link" aria-label="Goto page 1">1</a></li>
+			<li><a href="sharing_hosting.html" class="pagination-link" aria-label="Goto Page 2">2</a></li>
+			<li><a class="pagination-link is-current" aria-label="Page 3">3</a></li>
+			<li><a href="cloud.html" class="pagination-link" aria-label="Goto page 4">4</a></li>
+		</ul>
+	</nav>
+
+    <footer class="has-text-centered is-flex-align-items-flex-end mt-auto">
+		<span>&copy; 2025 Molchanov</span>
+    </footer>
+
+    <!-- для бургер-меню -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const burger = document.querySelector(".navbar-burger");
+        const menu = document.querySelector("#navbarMenu");
+        
+        if (burger && menu) {
+            burger.addEventListener("click", () => {
+                burger.classList.toggle("is-active");
+                menu.classList.toggle("is-active");
+            });
+        }
+    });
+    </script>
+</body>
+</html>
